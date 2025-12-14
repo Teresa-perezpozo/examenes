@@ -25,13 +25,20 @@ public class gestionPacientes {
 		String nombre = info[0];
 		String apellidos = info[1];
 		String dni = info[2];
-		Paciente p = new Paciente (nombre, apellidos, dni);
+		Paciente p = new Paciente (nombre, apellidos, dni);	
 		pacientes.add(p);
 		}
 		s.close()
 ;		return pacientes;
 		}
 	public void escribirPacientes(List<Paciente> ps, String f1) throws Exception{
+		FileInputStream f = new FileInputStream(f1);
+		InputStreamReader r1 = new InputStreamReader(file);
+		BufferedReader html = new BufferedReader(r1);
+		PrintWriter out = new PrintWriter(f);
+		
+		
+		
 		
 	}
 }

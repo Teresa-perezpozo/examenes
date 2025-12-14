@@ -13,4 +13,5 @@ h1{
 @media(max-width:480px){
 	h1{ dispay:none;
 	}
+
 }

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+html{
+	background :#2345;
+	font-family: sans-serif;
+	
+}
+h1{
+	text-align: left;
+	font-color:#bbb;
+	
+}
+@media(max-width:480px){
+	h1{ dispay:none;
+	}
+}

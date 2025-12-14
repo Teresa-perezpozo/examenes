@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Consulta de notas</title>
+<script>
+function comprobar( ) {
+email = document.forms["miFormulario"]["miEmail"].value;
+const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+return regex.test(email);
+}
+</script>
+</head>
+<body>
+<h1>Página de consulta de notas</h1>
+<form action = "calcular" method = "POST">
+
+<select>
+<option value="" disabled selected>-- Selecciona una asignatura --</option>
+<option value="algoritmos">ALED</option>
+            <option value="bd">MNUB</option>
+            <option value="so">BIOMEC</option>
+            <option value="teoria_lenguajes">FISH</option>
+            <option value="redes">SBIO</option>
+</select>
+Email : <input type = "email"; name = email; COMPROBAR>
+<input type = "submit" value = "mandar"onClick="return comprobar();">
+</form>
+</body>
+</html>

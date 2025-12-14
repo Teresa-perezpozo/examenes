@@ -32,10 +32,10 @@ public class gestionPacientes {
 ;		return pacientes;
 		}
 	public void escribirPacientes(List<Paciente> ps, String f1) throws Exception{
-		FileInputStream f = new FileInputStream(f1);
-		InputStreamReader r1 = new InputStreamReader(file);
-		BufferedReader html = new BufferedReader(r1);
-		PrintWriter out = new PrintWriter(f);
+		FileOnputStream f = new FileInputStream(f1);
+		for(Paciente p: ps)
+			out.println(p.getNombre()+","+p.getApellido()+","+p.getDni());
+			f.close();
 		
 		
 		

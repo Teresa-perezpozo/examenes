@@ -8,3 +8,8 @@ h1{
 	font-size :12px
 }
 
+header{display:none}
+footer{display:	none}
+p{
+	style:'red'
+}

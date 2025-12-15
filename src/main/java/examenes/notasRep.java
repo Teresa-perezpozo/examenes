@@ -42,7 +42,28 @@ public class notasRep extends HttpServlet {
 	}
 	@WebServlet("/notas")
 	public Map<String, String> obtenerAsignaturas( ) throws Exception{
+		Servlet Socket s ;
+		try {
+			s = new ServletSocket(1234);
+		}catch(Exception e ){		}
+		java.net.Socket remote = s.accept();
 		
+		Map<String,String> lista;
+		
+		while(linea = html.nextLine()!=null) {
+			String [] notasL = linea.split(":");
+			lista.add(notasL[0],notasL[1]);
+		}
+		
+		
+		
+		
+		InputStream in = remote.getInputStream();
+		OutputStream out = remote.getOutputStream();
+		out.print(pagina);
+		out.close();
+	
+	
 	}
 }
 

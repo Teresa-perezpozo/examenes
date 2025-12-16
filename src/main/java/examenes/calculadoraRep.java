@@ -22,5 +22,7 @@ public class calculadoraRep {
 	out.print(pagina);
 	out.close();
 
+}
+//socket
 
 }

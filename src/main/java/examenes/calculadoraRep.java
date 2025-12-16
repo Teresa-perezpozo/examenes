@@ -1,6 +1,7 @@
 package examenes;
 
 import java.net.ResponseCache;
+import java.net.ServerSocket;
 
 @WebServlet("/calculadora")
 public class calculadoraRep {
@@ -24,5 +25,12 @@ public class calculadoraRep {
 
 }
 //socket
+try {
+	ServerSocket servidor = new ServerSocket(3002);
+	Socket cliente = servidor.accept();
+	OutputStream out = cliente.getOutputStream();
+	PrinterWriter outTxt = new PrintWriter(out);
+	outTxt.close();
+	cliente.close();
 
 }

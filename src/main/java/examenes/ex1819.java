@@ -1,5 +1,6 @@
 package examenes;
 
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
@@ -34,6 +35,8 @@ public class ex1819 {
 		}catch{}
 		InputStream in = conexión.getInputStream();
 		OutputStream out = conexión.getOutputStream();
+		out.close();
+		in.close();
 		}
 	}
 }

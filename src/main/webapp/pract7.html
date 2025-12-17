@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "estilos.css">
+<meta charset="UTF-8">
+<title>busqueda</title>
+</head>
+<body>
+<form name = "formulario"action = "buscar" method = "POST">
+
+nombre : <input type = "text" name = nombre class = "opcional">
+apellidos: <input type = "text" name = apellidos class = "opcional">
+dni : <input type = "text" name = "apellidos">
+<input type = "submit" name = "enviar">
+</form>
+</body>
+</html>
+//en el css style , hay q poner
+@media (max-width: 480px) {
+.opcional {display:none;}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+function comprobar( ) {
+	email = document.forms["miFormulario"]["miEmail"].value;
+	const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+	return regex.test(email);
+	}
+</script>
+<title>Páfina consulta notas</title>
+</head>
+<body>
+	<h1>Página de consulta de notas</h1>
+	<h2></h2>
+	<form action="notas" method="doPost">
+		Asignatura :<select> XX
+		</select> Email:<input type="text" name="email"> <input type="submit"
+			onClick=return comprobar())>
+	</form>
+</body>
+</html>

@@ -30,5 +30,11 @@ out.setContextType("text/html");
 out.print(pagina);
 out.close();
 
+//socket
+ServiceSocket service = getServiceSocket(1234);
+Socket s = service. accept();
+
+s.close();
+service.close();
 
 }
